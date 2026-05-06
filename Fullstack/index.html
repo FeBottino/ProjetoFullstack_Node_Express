@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottino - É um sonho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">BOTTINO</div>
+        <div class="nav-links">
+            <a href="#">Pacientes</a>
+            <a href="#">Médicos</a>
+            <a href="#">Suporte</a>
+        </div>
+        <button class="btn-nav">Me aceite na sua sala no Jovem tech</button>
+    </nav>
+
+    <header class="hero">   
+        <div class="hero-content">
+            <h1>Wallace, me contrate.</h1>
+            <p>Foi uma satisfação inenarrável realizar esta atividade tão bem elaborada. Sinto-me extremamente lisonjeado por receber e executar este desafio proposto por um desenvolvedor sênior, entregando o resultado com o máximo de capricho, dedicação e foco em cada detalhe.</p>
+            <a href="#sistema" class="btn-primary">Explore meu sistema de pacientes</a>
+        </div>
+    </header>
+
+    <section id="sistema" class="secao-sistema">
+        <div class="container-header">
+            <h2>Painel de Controle</h2>
+            <p>Acesse os dados em tempo real.</p>
+        </div>
+
+        <div class="container">
+            <!-- Listagem -->
+            <div class="tabela">
+                <h3>Pacientes Registrados</h3>
+                <div id="listaPacientes" class="lista-rolagem">
+                    <!-- Itens serão inseridos aqui pelo JS -->
+                </div>
+            </div>
+
+            <!-- Pesquisa e Edição -->
+            <div class="tabela destaque">
+                <h3>Pesquisar / Editar</h3>
+                <input type="text" id="nomePaciente" placeholder="Nome para pesquisar ou editar">
+                <input type="text" id="dataPaciente" placeholder="Data de Nascimento (DD-MM-AAAA)">
+                <input type="text" id="cpfPaciente" placeholder="CPF (000.000.000-00)">
+                
+                <button onclick="buscarPaciente()" class="btn-secundario">Pesquisar Ficha</button>
+                <button onclick="atualizarUsuario()" class="btn-secundario">Salvar Alterações</button>
+                
+                <div id="resultado"></div>
+            </div>
+
+            <!-- Cadastro -->
+            <div id="inserir" class="tabela">
+                <h3>Cadastrar Paciente</h3>
+                <input type="text" id="novo-nome" placeholder="Nome completo">
+                <input type="text" id="novo-data" placeholder="Data de Nascimento">
+                <input type="text" id="novo-cpf" placeholder="CPF">
+                <button id="btn" class="btn-secundario" onclick="cadastrarPaciente()">Cadastrar Paciente</button>
+            </div>
+            
+        </div> 
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
