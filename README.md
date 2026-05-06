@@ -154,7 +154,7 @@ Este projeto foi desenvolvido com o objetivo de:
 
 ```bash
 
-git clone https://github.com/seu-usuario/seu-repositorio.git# 🏥 Sistema de Gestão de Pacientes e Agendamentos
+git clone []
 
 
 
